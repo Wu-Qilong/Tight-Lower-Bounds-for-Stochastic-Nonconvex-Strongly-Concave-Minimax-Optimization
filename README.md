@@ -1,4 +1,4 @@
-# Tight Lower Bounds of Purely Stochastic Nonconvex Strongly Concave Minimax Optimization
+# Tight Lower Bounds for Stochastic Nonconvex Strongly Concave Minimax Optimization
 
 Lean formalization and supplementary proof sources. Start with
 `ManuscriptPaperStatements.lean` for Theorem 4.1, Theorem 5.1 and Corollary 5.2.
