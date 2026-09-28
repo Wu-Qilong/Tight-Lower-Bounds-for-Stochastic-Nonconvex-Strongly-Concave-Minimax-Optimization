@@ -1,0 +1,51 @@
+name: Verify Lean proofs
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Install elan
+        run: |
+          curl --fail --silent --show-error --location https://elan.lean-lang.org/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Obtain pinned toolchain and dependencies
+        run: |
+          lake --version
+          lake exe cache get
+          git diff --exit-code -- lean-toolchain lake-manifest.json
+
+      - name: Build and audit
+        run: bash ./verify.sh
+
+      - name: Enforce axiom trust boundary
+        run: python3 scripts/check_axioms.py axiom_audit.log
+
+      - name: Save verification logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lean-verification-logs
+          path: |
+            build.log
+            axiom_audit.log
+          if-no-files-found: warn
+          retention-days: 14
