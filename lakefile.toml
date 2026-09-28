@@ -1,0 +1,179 @@
+name = "ncsc_pure_stochastic_lb"
+version = "0.1.0"
+defaultTargets = ["NCSCPureStochasticLB", "GaussianInformation", "PaperAlignment", "ManuscriptCalibration", "ManuscriptInstances", "ManuscriptBV", "ManuscriptAS", "ManuscriptASRate", "ManuscriptConditionNumbers", "ManuscriptMoreau", "ManuscriptMoreauRisk", "ManuscriptAlgorithms", "ManuscriptBudgetComplexity", "ManuscriptOnline", "ManuscriptOnlineRisk", "ManuscriptUniformOnline", "ManuscriptCausalRepair", "ManuscriptOracleNull", "ManuscriptProbability", "ManuscriptMeasurability", "ManuscriptStatefulPolicy", "ManuscriptHistoryPolicy", "ManuscriptFiniteHistory", "ManuscriptPartialHistory", "ManuscriptStoppingHistory", "ManuscriptUniformStopping", "ManuscriptRectangular", "ManuscriptOracleMeasure", "ManuscriptJointMeasurability", "ManuscriptTraceEvents", "ManuscriptBudgetHorizon", "ManuscriptAlgorithmRepresentation", "ManuscriptGeneralMoreau", "ManuscriptPopulationConstruction", "ManuscriptExactGate", "ManuscriptJointClass", "ManuscriptGeneralLift", "ManuscriptLiftHessian", "ManuscriptLiftOracle", "ManuscriptPaperStatements", "ManuscriptProgressExact", "ManuscriptCommonEvent"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.19.0"
+
+[[lean_lib]]
+name = "NCSCPureStochasticLB"
+
+[[lean_lib]]
+name = "GaussianInformation"
+
+[[lean_lib]]
+name = "PaperAlignment"
+
+[[lean_lib]]
+name = "ManuscriptCalibration"
+
+[[lean_lib]]
+name = "ManuscriptInstances"
+
+[[lean_lib]]
+name = "ManuscriptBV"
+
+[[lean_lib]]
+name = "ManuscriptAS"
+
+[[lean_lib]]
+name = "ManuscriptASRate"
+
+[[lean_lib]]
+name = "ManuscriptConditionNumbers"
+
+[[lean_lib]]
+name = "ManuscriptMoreau"
+
+[[lean_lib]]
+name = "ManuscriptMoreauRisk"
+
+[[lean_lib]]
+name = "ManuscriptAlgorithms"
+
+[[lean_lib]]
+name = "ManuscriptBudgetComplexity"
+
+[[lean_lib]]
+name = "ManuscriptOnline"
+
+[[lean_lib]]
+name = "ManuscriptOnlineRisk"
+
+[[lean_lib]]
+name = "ManuscriptUniformOnline"
+
+[[lean_lib]]
+name = "ManuscriptCausalRepair"
+
+[[lean_lib]]
+name = "ManuscriptOracleNull"
+
+[[lean_lib]]
+name = "ManuscriptProbability"
+
+[[lean_lib]]
+name = "ManuscriptMeasurability"
+
+[[lean_lib]]
+name = "ManuscriptStatefulPolicy"
+
+[[lean_lib]]
+name = "ManuscriptHistoryPolicy"
+
+[[lean_lib]]
+name = "ManuscriptFiniteHistory"
+
+[[lean_lib]]
+name = "ManuscriptPartialHistory"
+
+[[lean_lib]]
+name = "ManuscriptStoppingHistory"
+
+[[lean_lib]]
+name = "ManuscriptUniformStopping"
+
+[[lean_lib]]
+name = "ManuscriptRectangular"
+
+[[lean_lib]]
+name = "ManuscriptOracleMeasure"
+
+[[lean_lib]]
+name = "ManuscriptJointMeasurability"
+
+[[lean_lib]]
+name = "ManuscriptTraceEvents"
+
+[[lean_lib]]
+name = "ManuscriptBudgetHorizon"
+
+[[lean_lib]]
+name = "ManuscriptAlgorithmRepresentation"
+
+[[lean_lib]]
+name = "ManuscriptGeneralMoreau"
+
+[[lean_lib]]
+name = "ManuscriptPopulationConstruction"
+
+[[lean_lib]]
+name = "ManuscriptExactGate"
+
+[[lean_lib]]
+name = "ManuscriptJointClass"
+
+[[lean_lib]]
+name = "ManuscriptGeneralLift"
+
+[[lean_lib]]
+name = "ManuscriptLiftHessian"
+
+[[lean_lib]]
+name = "ManuscriptLiftOracle"
+
+[[lean_lib]]
+name = "ManuscriptPaperStatements"
+
+[[lean_lib]]
+name = "ManuscriptProgressExact"
+
+[[lean_lib]]
+name = "ManuscriptCommonEvent"
+
+[[lean_lib]]
+name = "ManuscriptKernelRandomization"
+
+[[lean_lib]]
+name = "ManuscriptKernelPolicy"
+
+[[lean_lib]]
+name = "ManuscriptKernelExecution"
+
+[[lean_lib]]
+name = "ManuscriptKernelComposition"
+
+[[lean_lib]]
+name = "ManuscriptTapeCoordinates"
+
+[[lean_lib]]
+name = "ManuscriptNativeTraceBridge"
+
+[[lean_lib]]
+name = "ManuscriptStochasticMemory"
+
+[[lean_lib]]
+name = "ManuscriptMemoryExecution"
+
+[[lean_lib]]
+name = "ManuscriptMemoryCoordinates"
+
+[[lean_lib]]
+name = "ManuscriptMemoryNative"
+
+[[lean_lib]]
+name = "ManuscriptMemoryAELegal"
+
+[[lean_lib]]
+name = "ManuscriptCausalGuard"
+
+[[lean_lib]]
+name = "ManuscriptGuardPreservation"
+
+[[lean_lib]]
+name = "ManuscriptGeneralProgress"
+
+[[lean_lib]]
+name = "ManuscriptKernelComplexity"
