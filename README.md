@@ -1,4 +1,5 @@
 # Tight Lower Bounds for Stochastic Nonconvex Strongly Concave Minimax Optimization
+[![Verify Lean proofs](https://github.com/Wu-Qilong/Tight-Lower-Bounds-for-Stochastic-Nonconvex-Strongly-Concave-Minimax-Optimization/actions/workflows/verify.yml/badge.svg)](https://github.com/Wu-Qilong/Tight-Lower-Bounds-for-Stochastic-Nonconvex-Strongly-Concave-Minimax-Optimization/actions/workflows/verify.yml)
 
 Lean formalization and supplementary proof sources. Start with
 `ManuscriptPaperStatements.lean` for Theorem 4.1, Theorem 5.1 and Corollary 5.2.
